@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 85%;
+    background-color: var(--color);
+    padding: .5rem;
+    height: 70px;
+    border-radius: 35px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    height: 100%;
+
+    li{
+        font-weight: 800;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        border-radius: 35px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: var(--text_light);
+        background-color: var(--primary);
+    }
+}
+
+
