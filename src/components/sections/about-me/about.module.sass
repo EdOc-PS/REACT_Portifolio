@@ -1,0 +1,55 @@
+@import '../../../index.sass'
+
+.about_section
+    height: 100vh
+    width: 100%
+    @include flexCenter(row)
+    background-color: $color
+
+    .about_container
+        width: 75%
+
+    .about_text
+        color: #FFF
+
+        h1
+            width: 400px
+            font-size: 52px
+            font-weight: 900
+
+        p
+            margin: 20px 0
+            width: 60%
+            font-size: 20px
+            font-weight: 600
+
+        button
+            @include flexCenter(row)
+            gap: 15px
+            padding: .75rem 1.5rem
+            font-size: 18px
+            font-weight: 800
+            cursor: pointer
+            border-radius: 10px
+            color: $text-light
+            background-color: $primary
+
+        .about_follow
+            @include flexCenter(row)
+            width: 40%
+            justify-content: start
+
+            p
+                font-size: 18px
+                font-weight: 500
+            ul
+                gap: 15px
+
+                li
+                    @include flexCenter(row)
+                    background-color: #FFF
+                    color: $color
+                    padding: 8px
+                    font-size: 14px
+                    cursor: pointer
+                    border-radius: 8px

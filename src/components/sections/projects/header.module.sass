@@ -12,22 +12,15 @@ header
     padding: .5rem
     height: 70px
     border-radius: 35px
-    border: 1px solid #2b303a
-    i
-        @include flexCenter(row)
 
-    a
-        @extend i
-        gap: 15px
-        width: 100%
-        height: 100%
-
-    .header_ul
+    ul
+        list-style: none
+        display: flex
         width: 100%
         justify-content: space-between
         height: 100%
 
-    .header_li
+    li
         gap: 10px
         font-weight: 800
         color: $text
@@ -35,6 +28,12 @@ header
         border-radius: 35px
         transition: all .3s ease
         cursor: pointer
+
+    a
+        @include flexCenter(row)
+        gap: 15px
+        width: 100%
+        height: 100%
 
     li:hover
         color: $text-light

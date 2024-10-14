@@ -16,12 +16,26 @@ $third: #BC3E3E
     box-sizing: border-box
     font-family: 'Nunito Sans'
 
-a
-    text-decoration: none
-    color: $text
-
 @mixin flexCenter($direction)
     flex-direction: $direction
     display: flex
     align-items: center
     justify-content: center
+
+a
+    text-decoration: none
+    color: $text
+
+button
+    border: 0
+
+i
+    @include flexCenter(row)
+
+ul
+    list-style: none
+    display: flex
+
+
+li
+
