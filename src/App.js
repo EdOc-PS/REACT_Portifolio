@@ -1,4 +1,4 @@
-import styles from './App.module.css';
+import styles from './App.module.sass';
 import Header from './components/header/header';
 
 export default function App() {
