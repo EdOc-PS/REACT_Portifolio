@@ -6,7 +6,7 @@ export default function Header() {
   useEffect(() => {
     const scrollHeader = () => {
       const header = document.querySelector('header')
-      header.classList.toggle(style.scroll_header, window.scrollY > 100);
+      header.classList.toggle(style.scroll_header, window.scrollY > 50);
       console.log(header);
     }
 

@@ -9,7 +9,7 @@ export default function About() {
 
         <div className={style.about_text}>
           <h1>Sou Eduardo, Programador</h1>
-          <p>
+          <p className={style.about_p}>
             Hello there. Tenho me dedicado à programação desde os meus 15 anos, quando comecei a explorar a 
             área através do curso técnico em informática e, mais tarde, no bacharelado em Sistemas de Informação. 
             Minha paixão por aprender e aprofundar meu conhecimento nesse campo continua crescendo a cada dia.
@@ -17,10 +17,11 @@ export default function About() {
           <button>Download CV <i class="fi fi-sr-arrow-small-down"></i></button>
           <div className={style.about_follow}>
             <p>Sigua-me</p>
+            <span></span>
             <ul>
-              <li><i class="fi fi-brands-instagram"></i></li>
-              <li><i class="fi fi-brands-github"></i></li>
-              <li><i class="fi fi-brands-linkedin"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
             </ul>
           </div>
 

@@ -14,20 +14,22 @@
 
         h1
             width: 400px
-            font-size: 52px
+            font-size: 2.6em
             font-weight: 900
 
         p
             margin: 20px 0
+            font-size: 1em
+
+        .about_p
             width: 60%
-            font-size: 20px
             font-weight: 600
 
         button
             @include flexCenter(row)
             gap: 15px
             padding: .75rem 1.5rem
-            font-size: 18px
+            font-size: 1em
             font-weight: 800
             cursor: pointer
             border-radius: 10px
@@ -37,10 +39,16 @@
         .about_follow
             @include flexCenter(row)
             width: 40%
-            justify-content: start
-
+            justify-content: space-between
+            gap: 10px
+            span
+                width: 20%
+                
+                display: block
+                background-color: #FFF
+                height: 3px
+                border-radius: 50px
             p
-                font-size: 18px
                 font-weight: 500
             ul
                 gap: 15px
@@ -50,6 +58,6 @@
                     background-color: #FFF
                     color: $color
                     padding: 8px
-                    font-size: 14px
+                    font-size: 16px
                     cursor: pointer
                     border-radius: 8px
