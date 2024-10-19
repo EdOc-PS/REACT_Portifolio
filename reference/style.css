@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --background: #181720;
+    --color: #22212A;
+
+    --text: #BFC0C1;
+    --text_light: #F1EDF9;
+    --primary: #583EBC;
+    --secondary: #3EBC87;
+    --third: #BC3E3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+
+body {
+    background-color: var(--background);
+
+}
+
+/*header {
+    display: none;
+    border: 1px solid #292830;
+    position: fixed;
+    top: 0%;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 85%;
+    background-color: var(--color);
+    padding: .5rem;
+    height: 70px;
+    border-radius: 35px;
+
+}
+
+.expand{
+    display: flex;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    height: 100%;
+
+    li{
+        font-weight: 800;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        border-radius: 35px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: var(--text_light);
+        background-color: var(--primary);
+    }
+}
+
+i {
+
+    color: var(--text);
+}
+*/
+section.home_section{
+    .splash_title{
+        h1{
+            font-size: 7em;
+            color: white;
+            font-weight: 900;
+        }
+    }
+}
+section{
+    padding: 2rem 4rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .tec_container{
+        color: #FFF;
+        width: 75%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .tec_text{
+            text-align: center;
+            h1{
+                font-size: 2em;
+                font-weight: 800;
+            }
+            p{
+                color: var(--text);
+                margin: 10px 0;
+            }
+        }
+       
+        .tec-side{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            .card_body{
+                background-color: #3e3d4b;
+                width: 300px;
+                padding: .8rem;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: .4s;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                .card_text{
+                    margin-top: .5rem;
+    
+                    .card_title{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: end;
+                        i{
+                            background-color: #583EBC;
+                            border-radius: 15px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        h1{
+                            font-weight: 800;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .card_desc{
+                        p{
+                            color:var(--text);
+                            font-size: .9em
+                        }
+                    }
+                }
+            }
+        }
+        
+        .card_body:hover{
+            transform: translateY(-10px);
+            background-color: #583EBC;
+        }
+
+    }
+}
