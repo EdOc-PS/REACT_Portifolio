@@ -1,9 +1,7 @@
 @import '../../../index.sass'
 
 .about_section
-    @include flexCenter(row)
-    background-color: $color
-   
+    background-color: $background
 
     .about_container
         width: 75%
@@ -13,15 +11,14 @@
 
         h1
             width: 400px
-            @include title(2.3em)
-            
+            @include title(2.5em)
 
         p
             margin: 20px 0
             font-size: 1em
 
         .about_p
-            width: 60%
+            width: 50%
             font-weight: 600
 
         button
@@ -37,26 +34,35 @@
 
         .about_follow
             @include flexCenter(row)
-            width: 40%
+            width: 50%
             justify-content: space-between
             gap: 10px
             span
                 width: 20%
-                
                 display: block
                 background-color: #FFF
-                height: 3px
+                height: 2px
                 border-radius: 50px
             p
                 font-weight: 500
             ul
                 gap: 15px
 
-                li
+                li  
+                    transition: .4s
                     @include flexCenter(row)
                     background-color: #FFF
-                    color: $color
                     padding: 8px
                     font-size: 16px
                     cursor: pointer
                     border-radius: 8px
+
+                    i
+                        color: $color
+                        transition: .4s
+
+                li:hover
+                    background-color: $primary
+
+                    i
+                        color: #FFF

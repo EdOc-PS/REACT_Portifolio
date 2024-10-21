@@ -1,3 +1,37 @@
 @import '../../../index.sass'
 
 .home_section
+    @include flexCenter(column)
+    justify-content: start
+    height: 100vh
+    position: relative
+    background-color: $primary
+
+    .home_container
+        width: 75%
+
+        .home_title
+            h1
+                @include title(7em)
+                width: 50%
+                text-transform: uppercase
+                margin-top: 9rem
+
+.svg_background
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    overflow: hidden
+    line-height: 0
+    transform: rotate(180deg)
+
+    & svg
+        position: relative
+        display: block
+        width: calc(100% + 1.3px)
+        height: 500px
+        transform: rotateY(180deg)
+
+    & .shape_fill
+        fill: $background

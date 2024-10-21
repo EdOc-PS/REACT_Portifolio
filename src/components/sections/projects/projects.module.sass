@@ -1,14 +1,20 @@
 @import '../../../index.sass'
 
 .projects_section
-    padding: 2rem
+        justify-content: initial
 
+.projects_text
+    text-align: center
+    padding: 5.5rem 0
 
-    .projects_text
-        text-align: center
-        color
-        h1
-            @include title(2em)  
+    h1
+        @include title(4.2em)
 
-        p
-            margin: 10px 0
+    p
+        margin: 10px 0
+        color: $text
+
+.projects_container
+    width: 75%
+    @include flexCenter(row)
+    gap: 15px

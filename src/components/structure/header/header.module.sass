@@ -1,4 +1,4 @@
-@import '../../index.sass'
+@import '../../../index.sass'
 
 header
     opacity: 0
@@ -7,15 +7,14 @@ header
     position: fixed
     top: 0%
     margin-top: 1.5rem
-    width: 85%
+    width: 50%
     background-color: $color
     padding: .5rem
-    height: 70px
+    height: 60px
     border-radius: 35px
     border: 1px solid #2b303a
-    i
-        @include flexCenter(row)
-
+    z-index: 1
+    
     a
         @extend i
         gap: 15px
@@ -30,16 +29,20 @@ header
     .header_li
         gap: 10px
         font-weight: 800
+        font-size: .9em
         color: $text
         width: 15%
         border-radius: 35px
         transition: all .3s ease
         cursor: pointer
 
+        i
+            color: $text
+
     .header_li:hover
         background-color: $primary
 
-        a
+        a, i
             color: $text-light
 
 .scroll_header
