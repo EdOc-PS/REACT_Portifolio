@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import style from './card.module.sass'
 
 export default function Card() {
 
   return (
-    <div className={style.card_body}>
+    <Link to={"/details"} className={style.card_body}>
       <img src="https://img.ibxk.com.br/2024/09/16/16123335919125.jpg?ims=704x" alt="" />
 
       <div className={style.card_text}>
@@ -18,7 +19,7 @@ export default function Card() {
             asperiores numquam </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

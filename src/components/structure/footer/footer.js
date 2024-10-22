@@ -35,7 +35,7 @@ export default function Footer() {
 
         <span></span>
         <div className={style.footer_cop}>
-          <p>© 2024</p>
+          <p>© 2024 - v2.0</p>
           <p>Desenvolvido por Eduardo Octávio</p>
         </div>
       </div>
