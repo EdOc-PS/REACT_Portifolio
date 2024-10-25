@@ -20,8 +20,10 @@
         &:hover
             background-color: $primary
             color: $text-light
+            border: 1px solid $primary
 
 .card_section
+    padding: 1rem
     justify-content: start
 
     .card_container
@@ -58,7 +60,7 @@
                     font-size: 1em
                     font-weight: 800
                     cursor: pointer
-                    gap: 15px   
+                    gap: 15px
 
                     i
                         color: $background
@@ -70,13 +72,20 @@
                     i
                         color: #FFF
 
+            .card_language
+                label
+                    @include title(1.5em)
+
+                ul
+                    gap: 1rem                    
+
     .card_description
         width: 70%
 
         img
             width: 100%
             border-radius: 15px
-            margin-bottom: 2rem
+            margin-bottom: 1.5rem
         p
             font-size: 1em
             color: $text

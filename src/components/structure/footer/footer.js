@@ -9,7 +9,7 @@ export default function Footer() {
 
 
         <div className={style.footer_title}>
-          <h1>Obrigado pela vista!</h1>
+          <h1>Obrigado pela visita!</h1>
         </div>
         <span></span>
 
