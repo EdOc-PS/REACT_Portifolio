@@ -4,7 +4,6 @@ export default function Skills() {
   return (
     <section className={style.skills_section}>
       <div className={style.skills_container}>
-
         <div className={style.skills_text}>
           <h1>Minhas Habilidades</h1>
           <p className={style.skills_p}>
@@ -23,6 +22,10 @@ export default function Skills() {
             <div className={`${style.skills_item} ${style.grid_b}`}></div>
           </div>
         </div>
+      </div>
+
+      <div className={style.edu_container}>
+
       </div>
     </section>
   );
