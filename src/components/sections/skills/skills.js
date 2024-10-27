@@ -1,3 +1,4 @@
+import Carrer from '../../structure/grid-carrer/carrer';
 import style from './skills.module.sass'
 
 export default function Skills() {
@@ -24,8 +25,8 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className={style.edu_container}>
-
+      <div className={style.carrer_container}>
+        <Carrer/>
       </div>
     </section>
   );
