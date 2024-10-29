@@ -1,8 +1,30 @@
-import { Link } from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import style from './details.module.sass'
+import {useState, useEffect } from 'react';
 
 export default function Details() {
 
+  const [detail, setDetail] = useState([])
+  const [selectedProject, setSelectedProject] = useState(null);
+  const  { name } = useParams()
+  
+  useEffect(() => {
+    fetch('./database/database.json',{
+      headers: {
+        Accept: "application/json"
+      }})
+    .then(res => res.json())
+    .then(data => setDetail(data.projects)) 
+
+    
+  }, [])
+
+  useEffect(() => {
+    const project = detail.find(project => project.name === name)
+    setSelectedProject(project)
+    console.log(project);
+    
+  }, [detail, name])
 
   return (
     <>
@@ -15,7 +37,7 @@ export default function Details() {
         <div className={style.card_container}>
 
           <div className={style.card_article}>
-            <h1>Name Project</h1>
+            <h1>{selectedProject.name}</h1>
             <div className={style.button_container}>
               <button>Web <i class="fi fi-sr-globe"></i></button>
               <button>Repositorie <i class="fi fi-sr-code-branch"></i></button>

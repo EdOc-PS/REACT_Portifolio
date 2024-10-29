@@ -7,7 +7,6 @@ export default function Header() {
     const scrollHeader = () => {
       const header = document.querySelector('header')
       header.classList.toggle(style.scroll_header, window.scrollY > 50);
-      console.log(header);
     }
 
     window.addEventListener("scroll", scrollHeader);

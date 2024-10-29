@@ -19,7 +19,7 @@ export default function App() {
       <Routes>
       <Route path='' element={<Body />}>
           <Route path='' element={<Index />}/>
-          <Route path='/details' element={<Details />}/>
+          <Route path='/project/:name' element={<Details />}/>
         </Route>
       </Routes>
     </BrowserRouter>
