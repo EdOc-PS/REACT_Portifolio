@@ -5,25 +5,24 @@ import {useState, useEffect } from 'react';
 export default function Details() {
 
   const [detail, setDetail] = useState([])
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState();
   const  { name } = useParams()
   
   useEffect(() => {
-    fetch('./database/database.json',{
+    fetch('../../../../../database/database.json',{
       headers: {
+        method: "GET",
         Accept: "application/json"
       }})
     .then(res => res.json())
-    .then(data => setDetail(data.projects)) 
-
+    .then(data => setDetail(data.projects))
     
   }, [])
 
   useEffect(() => {
     const project = detail.find(project => project.name === name)
     setSelectedProject(project)
-    console.log(project);
-    
+    console.log(selectedProject)
   }, [detail, name])
 
   return (
@@ -37,7 +36,9 @@ export default function Details() {
         <div className={style.card_container}>
 
           <div className={style.card_article}>
-            <h1>{selectedProject.name}</h1>
+            
+          {selectedProject ? (<h1>{selectedProject.name}</h1>) : (<p>lalal</p>)}
+
             <div className={style.button_container}>
               <button>Web <i class="fi fi-sr-globe"></i></button>
               <button>Repositorie <i class="fi fi-sr-code-branch"></i></button>
