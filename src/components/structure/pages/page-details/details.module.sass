@@ -24,10 +24,9 @@
 
 .card_section
     padding: 1rem
-    justify-content: start
+    justify-self: start
 
     .card_container
-        margin-top: 3rem
         width: 75%
         display: flex
         align-items: start
@@ -51,7 +50,7 @@
                 width: 100%
                 gap: 1rem
 
-                button
+                a
                     @include flexCenter(row)
                     width: 100%
                     border-radius: 10px
@@ -66,7 +65,7 @@
                     i
                         color: $background
 
-                button:nth-child(2)
+                a:nth-child(2)
                     background-color: #583EBC
                     color: #FFF
 

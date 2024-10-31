@@ -1,22 +1,23 @@
-import {Link, useParams} from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import style from './details.module.sass'
-import {useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Details() {
 
   const [detail, setDetail] = useState([])
   const [selectedProject, setSelectedProject] = useState();
-  const  { name } = useParams()
-  
+  const { name } = useParams()
+
   useEffect(() => {
-    fetch('../../../../../database/database.json',{
+    fetch('../../../../../database/database.json', {
       headers: {
         method: "GET",
         Accept: "application/json"
-      }})
-    .then(res => res.json())
-    .then(data => setDetail(data.projects))
-    
+      }
+    })
+      .then(res => res.json())
+      .then(data => setDetail(data.projects))
+
   }, [])
 
   useEffect(() => {
@@ -33,35 +34,44 @@ export default function Details() {
 
 
       <section className={style.card_section}>
-        <div className={style.card_container}>
 
-          <div className={style.card_article}>
-            
-          {selectedProject ? (<h1>{selectedProject.name}</h1>) : (<p>lalal</p>)}
+        {selectedProject ? (
+          <>
+            <div className={style.card_container}>
 
-            <div className={style.button_container}>
-              <button>Web <i class="fi fi-sr-globe"></i></button>
-              <button>Repositorie <i class="fi fi-sr-code-branch"></i></button>
+              <div className={style.card_article}>
+                <h1>{selectedProject.name}</h1>
+
+                <div className={style.button_container}>
+                  <Link to={selectedProject.web} target='Blank'>Web <i class="fi fi-sr-globe"></i></Link>
+                  <Link to={selectedProject.repository} target='Blank'>Repository <i class="fi fi-sr-code-branch"></i></Link>
+                </div>
+
+                <div className={style.card_language}>
+                  <label>Languages: </label>
+                  <ul>
+                    {selectedProject.technologies.map((tech_name, index)=>
+                      <li key={index}>{tech_name}</li>
+                    )}
+                    
+                
+                  </ul>
+                </div>
+              </div>
+
+              <div className={style.card_description}>
+                <img
+                  src="https://img.ibxk.com.br/2024/09/16/16123335919125.jpg?ims=704x"
+                  alt="Project"
+                />
+                <p>
+                  {selectedProject.description}
+                </p>
+              </div>
             </div>
-            <div className={style.card_language}>
-              <label>Languages: </label>
-              <ul>
-                <li>JAVASCRIPT</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
+          </>
 
-          <div className={style.card_description}>
-            <img
-              src="https://img.ibxk.com.br/2024/09/16/16123335919125.jpg?ims=704x"
-              alt="Project"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus praesentium culpa laudantium tempore quos blanditiis modi. Laudantium id amet modi, consectetur corporis, aperiam sequi explicabo esse, pariatur animi quas ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellat quam eligendi odit beatae, facilis harum modi adipisci quis iure? Iusto cumque ex, dicta nesciunt suscipit in molestias amet quia.
-            </p>
-          </div>
-        </div>
+        ) : (<></>)}
       </section>
     </>
   );
