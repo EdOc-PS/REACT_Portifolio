@@ -54,8 +54,8 @@
                     @include flexCenter(row)
                     width: 100%
                     border-radius: 10px
-                    background-color: #FFF
-                    color: $background
+                    background-color: #583EBC
+                    color: #FFF
                     padding: .75rem 1.5rem
                     font-size: 1em
                     font-weight: 800
@@ -63,21 +63,28 @@
                     gap: 15px
 
                     i
-                        color: $background
+                        color: #FFF
 
                 a:nth-child(2)
-                    background-color: #583EBC
-                    color: #FFF
+                    background-color: #FFF
+                    color: $background
 
                     i
-                        color: #FFF
+                       color: $background
 
             .card_language
                 label
                     @include title(1.5em)
 
                 ul
-                    gap: 1rem                    
+                    gap: 1.25rem
+                  
+                    li
+                        padding: .5rem 1rem
+                        color: $background
+                        border-radius: 8px
+                        font-weight: 600
+                        background-color: #FFF                    
 
     .card_description
         width: 70%

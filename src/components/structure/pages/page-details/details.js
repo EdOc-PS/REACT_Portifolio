@@ -43,7 +43,7 @@ export default function Details() {
                 <h1>{selectedProject.name}</h1>
 
                 <div className={style.button_container}>
-                  <Link to={selectedProject.web} target='Blank'>Web <i class="fi fi-sr-globe"></i></Link>
+                  {selectedProject.web ? ( <Link to={selectedProject.web} target='Blank'>Web <i class="fi fi-sr-globe"></i></Link> ) : (<></>)}
                   <Link to={selectedProject.repository} target='Blank'>Repository <i class="fi fi-sr-code-branch"></i></Link>
                 </div>
 
@@ -53,6 +53,7 @@ export default function Details() {
                     {selectedProject.technologies.map((tech_name, index)=>
                       <li key={index}>{tech_name}</li>
                     )}
+                    
                     
                 
                   </ul>
