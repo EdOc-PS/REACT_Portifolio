@@ -9,7 +9,7 @@ export default function Details() {
   const { name } = useParams()
 
   useEffect(() => {
-    fetch('../../../../../database/database.json', {
+    fetch('/database/database.json', {
       headers: {
         method: "GET",
         Accept: "application/json"
@@ -51,7 +51,7 @@ export default function Details() {
                   <label>Languages: </label>
                   <ul>
                     {selectedProject.technologies.map((tech_name, index)=>
-                      <li key={index}>{tech_name}</li>
+                      <li key={index}>{tech_name} <img src={`/assets/icons/${tech_name}.svg`} /></li>
                     )}
                     
                     
