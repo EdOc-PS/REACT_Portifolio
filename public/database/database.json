@@ -1,8 +1,8 @@
 {
     "projects": [
         {
-            "name": "dashboard",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "name": "Dashboard",
+            "description": "O projeto, desenvolvido em Angular, é um site interativo que consome a API RWAG para exibir informações detalhadas sobre jogos. A aplicação permite que os usuários naveguem por uma lista de jogos e, ao clicar em um título, visualizem detalhes como nome, descrição, plataformas disponíveis e classificação etária. O consumo da API RWAG foi implementado utilizando serviços do Angular para realizar requisições HTTP de maneira eficiente, garantindo dados atualizados em tempo real. O design foi projetado para ser funcional e direto, priorizando a exibição clara das informações, mas sem foco em responsividade para dispositivos móveis.",
             "technologies": [
                 "typescript",
                 "angular"
@@ -11,8 +11,8 @@
             "web": "https://angular-dashboard-rouge.vercel.app"
         },
         {
-            "name": "jaboc",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "name": "Jaboc",
+            "description": "A jaboc e um sistema de gerenciamento para a cafeteria foi desenvolvido em Java com integração a um banco de dados, garantindo armazenamento seguro e acesso rápido às informações. Ele oferece funcionalidades como cadastro de produtos, permitindo que os administradores adicionem novos itens ao cardápio com detalhes como preço, descrição e disponibilidade. Os clientes e atendentes podem visualizar o cardápio de forma prática, organizado por categorias, como bebidas e sobremesas. A integração com o banco de dados assegura que todas as alterações sejam salvas e sincronizadas em tempo real, proporcionando maior confiabilidade e eficiência na operação do sistema.",
             "technologies": [
                 "java"
             ],
@@ -20,7 +20,7 @@
         },
         {
             "name": "Calculadora",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "O projeto da calculadora foi desenvolvido em React, utilizando sua arquitetura baseada em componentes para criar uma interface moderna. A aplicação permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão, com um design intuitivo que facilita o uso. Os estados e eventos foram gerenciados de forma eficiente, garantindo que os cálculos sejam realizados em tempo real à medida que os números e operadores são inseridos. Além disso, o layout foi construído com CSS modular para oferecer uma experiência visual agradável e adaptável a diferentes dispositivos. O projeto destaca a capacidade do React de criar aplicações interativas e altamente performáticas.",
             "technologies": [
                 "react"
             ],

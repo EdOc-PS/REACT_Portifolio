@@ -10,8 +10,7 @@ export default function Skills() {
           <div className={style.skills_text}>
             <h1>Minhas Habilidades</h1>
             <p className={style.skills_p}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
-              Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Tenho experiência sólida e foco em tecnologias como Angular, React, TypeScript, JavaScript, Java, HTML e SASS, que utilizo para criar aplicações modernas, dinâmicas e eficientes, sempre buscando melhorar a experiência do usuário e otimizar o desempenho das soluções desenvolvidas.
             </p>
           </div>
 
@@ -31,8 +30,7 @@ export default function Skills() {
           <div className={style.skills_text}>
             <h1>Educação</h1>
             <p className={style.skills_p}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
-              Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+              Ao longo da minha trajetória, busquei constantemente aprimorar meus conhecimentos e habilidades, com ênfase em áreas essenciais para o desenvolvimento profissional na área de tecnologia.
             </p>
           </div>
           <Carrer />

@@ -21,7 +21,7 @@ export default function Projects() {
     <section className={style.projects_section}>
       <div className={style.projects_text}>
         <h1>Projetos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id assumenda porro pariatur praesentium.</p>
+        <p>Confira a seguir alguns dos projetos que desenvolvi, refletindo minhas habilidades e a aplicação de tecnologias para resolver desafios reais.</p>
       </div>
 
       <div className={style.projects_container}>

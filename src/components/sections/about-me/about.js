@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import style from './about.module.sass'
 
 export default function About() {
@@ -8,7 +9,7 @@ export default function About() {
       <div className={style.about_container}>
 
         <div className={style.about_text}>
-          <h1>Sou Eduardo, Programador</h1>
+          <h1>Sou Eduardo, Desenvolvedor</h1>
           <p className={style.about_p}>
             Hello there. Tenho me dedicado à programação desde os meus 15 anos, quando comecei a explorar a 
             área através do curso técnico em informática e, mais tarde, no bacharelado em Sistemas de Informação. 
@@ -19,9 +20,9 @@ export default function About() {
             <p>Sigua-me</p>
             <span></span>
             <ul>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-github"></i></li>
-              <li><i class="fa-brands fa-linkedin-in"></i></li>
+              <li><Link to={"https://www.instagram.com/eduuard_oc/"} target='blank'><i class="fa-brands fa-instagram"></i></Link></li>
+              <li><Link to={"https://github.com/edOc-PS"} target='blank'><i class="fa-brands fa-github"></i></Link></li>
+              <li><Link to={"https://www.linkedin.com/in/eduardo-oct%C3%A1vio-284066259/"} target='blank'><i class="fa-brands fa-linkedin-in"></i></Link></li>
             </ul>
           </div>
 
