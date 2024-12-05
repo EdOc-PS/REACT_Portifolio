@@ -26,6 +26,27 @@
             ],
             "repository": "https://github.com/EdOc-PS/REACT_Calculadora",
             "web": "https://react-calculadora-sable.vercel.app"
+        },
+        {
+            "name": "Jogo da Memoria",
+            "description": "O Jogo da Memória, criado com HTML, CSS e JavaScript, é um projeto interativo onde o jogador deve combinar pares de cartas. O HTML organiza o tabuleiro e as cartas, enquanto o CSS estiliza o jogo, adicionando animações e garantindo um layout responsivo. O JavaScript controla a lógica, como virar as cartas e verificar se elas formam um par, além de oferecer funcionalidades extras como cronômetro ou contagem de tentativas. É uma ótima maneira de treinar suas habilidades de desenvolvimento web e criar uma experiência divertida e desafiadora.",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "repository": "https://github.com/EdOc-PS/WEB_Jogo-da-Memoria",
+            "web": "https://edoc-ps.github.io/WEB_Jogo-da-Memoria/"
+        },
+        {
+            "name": "Blog",
+            "description": "Este blog é um projeto pessoal criado com o objetivo de aprender e explorar o Angular. Desenvolvido para colocar em prática os conceitos fundamentais do framework, o blog apresenta uma estrutura simples, com postagens dinâmicas e navegação interativa. Durante o desenvolvimento, são aplicados recursos como componentes, serviços e roteamento, permitindo um aprendizado prático e contínuo. Este projeto serve como um ambiente de experimentação, onde a cada nova funcionalidade implementada, o domínio do Angular é aprimorado, tornando-o uma ferramenta essencial para projetos mais complexos no futuro.",
+            "technologies": [
+              "angular",
+              "typescript"
+            ],
+            "repository": "https://github.com/EdOc-PS/WEB_Jogo-da-Memoria",
+            "web": "https://edoc-ps.github.io/WEB_Jogo-da-Memoria/"
         }
     ]
 }

@@ -2,7 +2,7 @@
 
 footer
     width: 100%
-    padding: 5rem 0 2rem 0 
+    padding: 5rem 0 2rem 0
     background-color: $primary
     @include flexCenter(column)
     font-weight: 600
@@ -23,9 +23,15 @@ footer
 
         .footer_title
             padding-bottom: 1.5rem
+            display: flex
+            justify-content: space-between
+            width: 100%
             h1
                 @include title(3em)
-        
+            
+            i
+                font-size: 2rem
+
         .footer_body
             display: flex
             gap: 20px
@@ -33,18 +39,19 @@ footer
             height: 100%
 
             .footer_ul
-                h1  
+                h1
                     margin-bottom: 10px
                     @include title(1em)
                 ul
                     flex-direction: column
                     gap: 5px
-                 
                     font-size: .8em
+
+                    a
+                        color: #FFF
         .footer_cop
             padding-top: 1.5rem
             width: 100%
             @include flexCenter(row)
             justify-content: space-between
             font-size: .8em
-            

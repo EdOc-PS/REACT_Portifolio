@@ -3,7 +3,7 @@ import style from './skills.module.sass'
 
 export default function Skills() {
   return (
-    <section className={style.skills_section}>
+    <section className={style.skills_section} id={"skills"}>
 
       <div className={style.skills_container}>
         <div className={style.ability_container}>

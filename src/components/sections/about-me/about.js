@@ -5,7 +5,7 @@ import style from './about.module.sass'
 export default function About() {
 
   return (
-    <section className={style.about_section}>
+    <section className={style.about_section} id={"about"}>
       <div className={style.about_container}>
 
         <div className={style.about_text}>

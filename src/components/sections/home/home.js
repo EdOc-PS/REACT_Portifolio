@@ -3,7 +3,7 @@ import style from './home.module.sass'
 
 export default function Home() {
   return (
-    <section className={style.home_section}>
+    <section className={style.home_section} id={"home"}>
 
       <div className={style.home_container}>
 

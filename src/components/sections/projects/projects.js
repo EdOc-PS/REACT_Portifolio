@@ -18,7 +18,7 @@ export default function Projects() {
   }, [])
 
   return (
-    <section className={style.projects_section}>
+    <section className={style.projects_section} id={"projects"}>
       <div className={style.projects_text}>
         <h1>Projetos</h1>
         <p>Confira a seguir alguns dos projetos que desenvolvi, refletindo minhas habilidades e a aplicação de tecnologias para resolver desafios reais.</p>
