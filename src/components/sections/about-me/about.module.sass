@@ -1,8 +1,9 @@
-@import '../../../index.sass'
+@use '../../../index.sass' as *
 
 .about_section
     background-color: $background
     height: 150vh
+
     .about_container
         width: 75%
 
@@ -50,10 +51,9 @@
 
                 li  
                     transition: .4s
-                    @include flexCenter(row)
                     background-color: #FFF
-                    padding: .45rem .6rem
-                    font-size: .9em
+                    font-size: 1em
+                    padding: .5rem .75rem
                     cursor: pointer
                     border-radius: 8px
 

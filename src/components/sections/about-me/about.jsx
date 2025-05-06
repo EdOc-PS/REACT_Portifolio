@@ -20,7 +20,7 @@ export default function About() {
             <p>Sigua-me</p>
             <span></span>
             <ul>
-              <li><Link to={"https://www.instagram.com/eduuard_oc/"} target='blank'><i class="fa-brands fa-instagram"></i></Link></li>
+              <li><Link to={"https://www.instagram.com/edoc.ps/"} target='blank'><i class="fa-brands fa-instagram"></i></Link></li>
               <li><Link to={"https://github.com/edOc-PS"} target='blank'><i class="fa-brands fa-github"></i></Link></li>
               <li><Link to={"https://www.linkedin.com/in/eduardo-oct%C3%A1vio-284066259/"} target='blank'><i class="fa-brands fa-linkedin-in"></i></Link></li>
             </ul>

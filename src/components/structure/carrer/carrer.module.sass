@@ -1,0 +1,19 @@
+@use '../../../index.sass' as *
+
+.carrer_area
+    margin: 4rem 0
+    width: 100%
+    @include flexCenter(row)
+    gap: 3rem
+    position: relative
+
+.carrer_area::before
+    content: ""
+    width: 100%
+    position: absolute
+    background-color: #FFF
+    border-radius: 50%
+    height: 2px
+    display: flex
+    bottom: 17%
+
