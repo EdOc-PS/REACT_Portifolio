@@ -1,0 +1,22 @@
+@import '../../../index.sass'
+
+.projects_section
+        justify-content: initial
+        height: 150vh
+
+.projects_text
+    text-align: center
+    padding: 5.5rem 0
+
+    h1
+        @include title(4.2em)
+
+    p
+        margin: 10px 0
+        color: $text
+
+.projects_container
+    width: 70%
+    flex-wrap: wrap
+    @include flexCenter(row)
+    gap: 15px

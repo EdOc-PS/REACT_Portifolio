@@ -1,0 +1,39 @@
+@import '../../../index.sass'
+
+@mixin align($position)
+    display: flex
+    align-items: end
+    justify-content: $position
+    height: 100%
+
+.home_section
+    @include flexCenter(column)
+    justify-content: start
+    height: 100vh
+    padding: 0 2rem
+    .home_container
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        
+        img
+            position: absolute
+            top: 0%
+            right: 0%
+            width: 100%
+
+        .home_title
+            @include align($position: start)
+            width: 40%
+
+            h1
+                @include title(8em)
+                text-transform: uppercase
+
+        .home_button
+            @include align($position: end)
+            
+            a
+                padding: 2rem 0
+                font-size: 1em

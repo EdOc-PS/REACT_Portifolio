@@ -1,0 +1,47 @@
+@import '../../../index.sass'
+
+.header
+    opacity: 0
+    visibility: hidden
+    transition: all .5s ease
+    width: 50%
+    background-color: $color
+    border: 1px solid #2b303a
+    border-radius: 35px
+    padding: .3rem
+    z-index: 2
+    
+    a
+        @extend i
+        gap: 15px
+        width: 100%
+        height: 100%
+
+    .header_ul
+        width: 100%
+        justify-content: space-between
+        height: 100%
+
+    .header_li
+        gap: 10px
+        font-weight: 800
+        font-size: .9em
+        color: $text
+        padding: 1rem 1.25rem
+        border-radius: 35px
+        transition: all .3s ease
+        cursor: pointer
+
+        i
+            color: $text
+
+    .header_li:hover
+        background-color: $primary
+
+        a, i
+            color: $text-light
+
+.scroll_header
+    opacity: 1
+    visibility: visible
+    @include flexCenter(row)

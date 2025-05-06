@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "name": "Dashboard",
+            "description": "O projeto, desenvolvido em Angular, é um site interativo que consome a API RWAG para exibir informações detalhadas sobre jogos. A aplicação permite que os usuários naveguem por uma lista de jogos e, ao clicar em um título, visualizem detalhes como nome, descrição, plataformas disponíveis e classificação etária. O consumo da API RWAG foi implementado utilizando serviços do Angular para realizar requisições HTTP de maneira eficiente, garantindo dados atualizados em tempo real. O design foi projetado para ser funcional e direto, priorizando a exibição clara das informações, mas sem foco em responsividade para dispositivos móveis.",
+            "technologies": [
+                "typescript",
+                "angular"
+            ],
+            "repository": "https://github.com/EdOc-PS/ANGULAR_Projeto-Dashboard",
+            "web": "https://angular-dashboard-rouge.vercel.app"
+        },
+        {
+            "name": "Jaboc",
+            "description": "A jaboc e um sistema de gerenciamento para a cafeteria foi desenvolvido em Java com integração a um banco de dados, garantindo armazenamento seguro e acesso rápido às informações. Ele oferece funcionalidades como cadastro de produtos, permitindo que os administradores adicionem novos itens ao cardápio com detalhes como preço, descrição e disponibilidade. Os clientes e atendentes podem visualizar o cardápio de forma prática, organizado por categorias, como bebidas e sobremesas. A integração com o banco de dados assegura que todas as alterações sejam salvas e sincronizadas em tempo real, proporcionando maior confiabilidade e eficiência na operação do sistema.",
+            "technologies": [
+                "java"
+            ],
+            "repository": "https://github.com/EdOc-PS/JAVA_Projeto-Jaboc"
+        },
+        {
+            "name": "Calculadora",
+            "description": "O projeto da calculadora foi desenvolvido em React, utilizando sua arquitetura baseada em componentes para criar uma interface moderna. A aplicação permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão, com um design intuitivo que facilita o uso. Os estados e eventos foram gerenciados de forma eficiente, garantindo que os cálculos sejam realizados em tempo real à medida que os números e operadores são inseridos. Além disso, o layout foi construído com CSS modular para oferecer uma experiência visual agradável e adaptável a diferentes dispositivos. O projeto destaca a capacidade do React de criar aplicações interativas e altamente performáticas.",
+            "technologies": [
+                "react"
+            ],
+            "repository": "https://github.com/EdOc-PS/REACT_Calculadora",
+            "web": "https://react-calculadora-sable.vercel.app"
+        },
+        {
+            "name": "Jogo da Memoria",
+            "description": "O Jogo da Memória, criado com HTML, CSS e JavaScript, é um projeto interativo onde o jogador deve combinar pares de cartas. O HTML organiza o tabuleiro e as cartas, enquanto o CSS estiliza o jogo, adicionando animações e garantindo um layout responsivo. O JavaScript controla a lógica, como virar as cartas e verificar se elas formam um par, além de oferecer funcionalidades extras como cronômetro ou contagem de tentativas. É uma ótima maneira de treinar suas habilidades de desenvolvimento web e criar uma experiência divertida e desafiadora.",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "repository": "https://github.com/EdOc-PS/WEB_Jogo-da-Memoria",
+            "web": "https://edoc-ps.github.io/WEB_Jogo-da-Memoria/"
+        },
+        {
+            "name": "Blog",
+            "description": "Este blog é um projeto pessoal criado com o objetivo de aprender e explorar o Angular. Desenvolvido para colocar em prática os conceitos fundamentais do framework, o blog apresenta uma estrutura simples, com postagens dinâmicas e navegação interativa. Durante o desenvolvimento, são aplicados recursos como componentes, serviços e roteamento, permitindo um aprendizado prático e contínuo. Este projeto serve como um ambiente de experimentação, onde a cada nova funcionalidade implementada, o domínio do Angular é aprimorado, tornando-o uma ferramenta essencial para projetos mais complexos no futuro.",
+            "technologies": [
+              "angular",
+              "typescript"
+            ],
+            "repository": "https://github.com/EdOc-PS/WEB_Jogo-da-Memoria",
+            "web": "https://edoc-ps.github.io/WEB_Jogo-da-Memoria/"
+        }
+    ]
+}

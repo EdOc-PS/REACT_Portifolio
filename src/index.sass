@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
+
+$background: #1B1E24
+$background_light: #333A45
+$color: #23272F
+
+$text: #BFC0C1
+$text-light: #F1EDF9
+
+$primary: #583EBC
+$secondary: #3EBC87
+$third: #BC3E3E
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    font-family: 'Nunito Sans'
+    color: #FFF
+
+@mixin flexCenter($direction)
+    flex-direction: $direction
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin title($size)
+    font-weight: 900
+    font-size: $size
+
+a
+    text-decoration: none
+    color: $text
+
+i
+    @include flexCenter(row)
+
+ul
+    list-style: none
+    display: flex
+
+section
+    @include flexCenter(column)
+    height: 100vh
+    width: 100%
+    padding: 2rem 0
+
+header
+    position: fixed
+    top: 0%
+    height: 60px
+    z-index: 1
+    margin-top: 1.5rem
+    padding: .5rem
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background: $background
+
+::-webkit-scrollbar-thumb
+    background: $color
+    border-radius: 20px
+    height: 5px
+
+::-webkit-scrollbar-thumb:hover
+    background: $primary

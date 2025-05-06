@@ -1,0 +1,106 @@
+@import '../../../../index.sass'
+
+.card_header
+    display: flex
+    align-items: center
+    justify-content: end
+    width: 80%
+
+    .card_back
+        background-color: $color
+        border: 1px solid #2b303a
+        color: $text
+        padding: .8rem
+        font-weight: 800
+        font-size: .8em
+        border-radius: 15px
+        transition: .4s
+        cursor: pointer
+
+        &:hover
+            background-color: $primary
+            color: $text-light
+            border: 1px solid $primary
+
+.card_section
+    padding: 1rem
+    justify-self: start
+
+    .card_container
+        width: 75%
+        display: flex
+        align-items: start
+        flex-direction: row-reverse
+        gap: 2rem
+
+        .card_article
+            width: 30%
+            display: flex
+            gap: 1rem
+            align-items: start
+         
+            flex-direction: column
+
+            h1
+                @include title(4em)
+                text-transform: capitalize
+
+            .button_container
+                display: flex
+                flex-direction: column
+                width: 100%
+                gap: 1rem
+
+                a
+                    @include flexCenter(row)
+                    width: 100%
+                    border-radius: 10px
+                    background-color: #583EBC
+                    color: #FFF
+                    padding: .75rem 1.5rem
+                    font-size: 1em
+                    font-weight: 800
+                    cursor: pointer
+                    gap: 15px
+
+                    i
+                        color: #FFF
+
+                a:nth-child(2)
+                    background-color: #FFF
+                    color: $background
+
+                    i
+                       color: $background
+
+            .card_language
+                label
+                    @include title(1.5em)
+
+                ul
+                    gap: 1.25rem
+                  
+                    li
+                        padding: .5rem 1rem
+                        color: $background
+                        border-radius: 8px
+                        font-weight: 700
+                        background-color: #FFF   
+                        margin-top: 1rem   
+                        text-transform: capitalize 
+                        @include flexCenter(row)
+                        gap: .8rem
+
+                        img
+                            width: 1.25rem             
+
+    .card_description
+        width: 70%
+
+        img
+            width: 100%
+            border-radius: 15px
+            margin-bottom: 1.5rem
+        p
+            font-size: 1em
+            color: $text
