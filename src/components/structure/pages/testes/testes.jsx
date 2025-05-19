@@ -1,12 +1,12 @@
-import style from "./home.module.sass";
+import styles from "./testes.module.sass";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Testes() {
   return (
-    <section className={style.home_section} id={"home"}>
-      <div className={style.blob_container}>
+    <section className={styles.section}>
+      <div className={styles["blob-container"]}>
         <motion.div
-          className={style.blob}
+          className={styles.blob}
           animate={{
             borderRadius: [
               "60% 40% 30% 70% / 60% 30% 70% 40%",
@@ -21,17 +21,6 @@ export default function Home() {
             ease: "easeInOut",
           }}
         />
-      </div>
-      <div className={style.home_container}>
-        <div className={style.home_title}>
-          <h1>Hello World!</h1>
-        </div>
-
-        <div className={style.home_button}>
-          <a href="#">
-            <i class="fi fi-sr-arrow-down"></i>
-          </a>
-        </div>
       </div>
     </section>
   );

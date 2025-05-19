@@ -9,19 +9,31 @@
 .home_section
     @include flexCenter(column)
     justify-content: start
-    height: 100vh
     padding: 0 2rem
+
+    .blob-container
+        position: relative
+        width: 100%
+        height: 100%
+
+    .blob
+        position: absolute
+        top: 30%
+        right: -10%
+        width: 700px
+        height: 700px
+        background: radial-gradient(circle at 30% 30%, #7f00ff, #00ffe5)
+        transform: translate(-50%, -50%)
+        filter: blur(100px)
+        mix-blend-mode: screen
+        opacity: 1
+        
     .home_container
         height: 100%
         width: 100%
         display: flex
         justify-content: space-between
-        
-        img
-            position: absolute
-            top: 0%
-            right: 0%
-            width: 100%
+
 
         .home_title
             @include align($position: start)
@@ -33,7 +45,7 @@
 
         .home_button
             @include align($position: end)
-            
+
             a
                 padding: 2rem 0
                 font-size: 1em
