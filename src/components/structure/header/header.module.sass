@@ -3,6 +3,7 @@
 .header
     opacity: 0
     visibility: hidden
+    height: 60px
     transition: all .5s ease
     width: 30%
     background-color: $color
@@ -45,3 +46,13 @@
     opacity: 1
     visibility: visible
     @include flexCenter(row)
+
+@media screen and (min-width: 1024px) 
+    .header
+        width: 35%
+        height: 55px
+        .header_li
+            font-size: .7rem
+            padding: 0rem 1rem
+
+    

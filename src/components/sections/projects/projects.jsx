@@ -26,7 +26,7 @@ export default function Projects() {
 
       <div className={style.projects_container}>
         {projects.map((projects, index) => (
-           <Card key={index} title={projects.name} description={projects.description} />
+           <Card key={index} id={projects.id} title={projects.name} description={projects.description} />
         ))}
        
       </div>

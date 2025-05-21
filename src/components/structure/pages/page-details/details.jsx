@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Details() {
   const [detail, setDetail] = useState([]);
+  const [id, setId] = useState([]);
   const [selectedProject, setSelectedProject] = useState();
   const { name } = useParams();
 
@@ -15,14 +16,14 @@ export default function Details() {
       },
     })
       .then((res) => res.json())
-      .then((data) => setDetail(data.projects));
+      .then((data) => setDetail(data.projects))
+      .then((data) => setId(data.id));
   }, []);
 
   useEffect(() => {
     const project = detail.find((project) => project.name === name);
     setSelectedProject(project);
-    console.log(selectedProject);
-  }, [detail, name]);
+  }, [detail, name, id]);
 
   return (
     <>
@@ -67,7 +68,7 @@ export default function Details() {
 
               <div className={style.card_description}>
                 <img
-                  src="https://img.ibxk.com.br/2024/09/16/16123335919125.jpg?ims=704x"
+                  src={`/assets/projects-background/${selectedProject.id}.png`}
                   alt="Project"
                 />
                 <p>{selectedProject.description}</p>

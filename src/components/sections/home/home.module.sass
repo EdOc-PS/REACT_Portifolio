@@ -27,13 +27,12 @@
         filter: blur(100px)
         mix-blend-mode: screen
         opacity: 1
-        
+
     .home_container
         height: 100%
         width: 100%
         display: flex
         justify-content: space-between
-
 
         .home_title
             @include align($position: start)
@@ -49,3 +48,10 @@
             a
                 padding: 2rem 0
                 font-size: 1em
+
+@media screen and (min-width: 1024px)
+    .home_section
+        .blob
+            width: 500px
+            top: 32%
+            height: 500px

@@ -11,9 +11,8 @@ export default function About() {
         <div className={style.about_text}>
           <h1>Sou Eduardo, Desenvolvedor</h1>
           <p className={style.about_p}>
-            Hello there. Tenho me dedicado à programação desde os meus 15 anos, quando comecei a explorar a 
-            área através do curso técnico em informática e, mais tarde, no bacharelado em Sistemas de Informação. 
-            Minha paixão por aprender e aprofundar meu conhecimento nesse campo continua crescendo a cada dia.
+            Olá, sou o Eduardo, programador com experiência prática em desenvolvimento web, análise de dados e infraestrutura de TI. Atuei em projetos utilizando tecnologias como React, Angular, Java, Boomi e bancos de dados relacionais. Tenho vivência em ambientes corporativos através de estágio e participação em empresa júnior.
+            Busco oportunidades para aplicar meus conhecimentos e contribuir com soluções inovadoras no setor de tecnologia.
           </p>
           <button>Download CV <i class="fi fi-sr-arrow-small-down"></i></button>
           <div className={style.about_follow}>
@@ -27,7 +26,7 @@ export default function About() {
           </div>
 
         </div>
-        <div><img src='#' alt=''/></div>
+        <div><img src='#' alt='' /></div>
       </div>
     </section>
   );

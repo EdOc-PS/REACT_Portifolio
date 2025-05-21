@@ -38,7 +38,7 @@
             display: flex
             gap: 1rem
             align-items: start
-         
+
             flex-direction: column
 
             h1
@@ -71,7 +71,7 @@
                     color: $background
 
                     i
-                       color: $background
+                        color: $background
 
             .card_language
                 label
@@ -79,20 +79,20 @@
 
                 ul
                     gap: 1.25rem
-                  
+
                     li
                         padding: .5rem 1rem
                         color: $background
                         border-radius: 8px
                         font-weight: 700
-                        background-color: #FFF   
-                        margin-top: 1rem   
-                        text-transform: capitalize 
+                        background-color: #FFF
+                        margin-top: 1rem
+                        text-transform: capitalize
                         @include flexCenter(row)
                         gap: .8rem
 
                         img
-                            width: 1.25rem             
+                            width: 1.25rem
 
     .card_description
         width: 70%
@@ -104,3 +104,14 @@
         p
             font-size: 1em
             color: $text
+
+@media screen and (min-width: 1024px)
+    .card_header
+        position: relative
+    .card_section
+        .card_container
+            width: 80%
+            justify-content: space-evenly
+
+            .card_description
+                width: 60%
