@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <div className={style.home_button}>
-          <a href="#">
+          <a href="#about">
             <i class="fi fi-sr-arrow-down"></i>
           </a>
         </div>
